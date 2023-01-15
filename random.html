@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Piedra, papel o tijeras</h1>
+    </header>
+
+    <section class="container-reset">
+    </section>
+    
+    <main>
+        <div class="container-result">
+            <img class="reset"src="img/restart.svg" alt="Botón para restaurar la partida" onclick="reset()">
+            <div class="result">
+                <div class="container-figure">
+                    <p>Tú</p>
+                    <img src="img/pregunta.svg" class="human-image" alt="Tu elección">
+                </div>
+                <div class="container-score">
+                    <p class="human-score">0</p>
+                </div>
+                
+                <div class="container-vs">
+                    <p>VS</p>
+                </div>
+
+                <div class="container-score">
+                    <p class="machine-score">0</p>
+                </div>
+                <div class="container-figure">
+                    <p>Máquina</p>
+                    <img src="img/pregunta.svg" class="machine-image" alt="Elección de la máquina">
+                </div>
+            </div>
+            <p class="result-text">Resultado 🎮</p>
+        </div>
+    </main>
+
+    <section class="container-main-choose">
+        <h2 class="title-choose">Escoge</h2>
+        <div class="container-choose">
+            <button onclick="play('piedra')"><img src="img/piedra.png" alt="Imagen de la piedra"></button>
+            <button onclick="play('papel')"><img src="img/papel.png" alt="Imagen del papel"></button>
+            <button onclick="play('tijera')"><img src="img/tijera.png" alt="Imagen de la tijera"></button>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+
+    <script src="valores.js"></script>
+</body>
+
+</html>
